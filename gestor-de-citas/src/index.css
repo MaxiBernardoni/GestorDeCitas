@@ -55,10 +55,9 @@ body {
 }
 
 #root {
-  width: 1126px;
+  width: 100%;
   max-width: 100%;
   margin: 0 auto;
-  text-align: center;
   border-inline: 1px solid var(--border);
   min-height: 100svh;
   display: flex;
@@ -74,25 +73,27 @@ h2 {
 }
 
 h1 {
-  font-size: 56px;
+  font-size: 50px;
   letter-spacing: -1.68px;
-  margin: 32px 0;
+  margin: 20px 0 0;
   @media (max-width: 1024px) {
     font-size: 36px;
     margin: 20px 0;
   }
 }
 h2 {
-  font-size: 24px;
+  font-size: 30px;
   line-height: 118%;
   letter-spacing: -0.24px;
-  margin: 0 0 8px;
+  margin: 0 0 5px;
   @media (max-width: 1024px) {
     font-size: 20px;
   }
 }
 p {
   margin: 0;
+  font-size: 15px;
+
 }
 
 code,
@@ -109,3 +110,114 @@ code {
   padding: 4px 8px;
   background: var(--code-bg);
 }
+
+html {
+        min-height: 100%;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        background-image: linear-gradient(-225deg, #A445B2 0%, #D41872 52%, #FF0066 100%);
+        min-height: 100%;
+        padding-bottom: 5rem;
+      }
+
+      h1,
+      h2 {
+        color: white;
+        padding: 3rem 0;
+        text-align: center;
+
+        text-transform: uppercase;
+
+        font-family: 'Staatliches', cursive;
+        letter-spacing: 1px;
+      }
+
+      .lista-citas .media {
+        border-bottom: 1px solid #e1e1e1;
+        padding-bottom: 3rem;
+      }
+
+      .lista-citas .media:last-of-type {
+        border-bottom: 0;
+      }
+
+      .lista-citas .media-body p {
+        margin: 0;
+      }
+
+      .lista-citas .media-body button {
+        margin-top: 1rem !important;
+      }
+
+      .lista-citas .media-body span {
+        font-weight: bold;
+      }
+
+      label {
+        color: white;
+        font-size: 15px;
+      }
+      input {
+        font-size: 15px;
+      }
+      input[type="date"],
+      input[type="time"] {
+        height: 38px;
+        padding: 6px 10px;
+        background-color: #fff;
+        border: 1px solid #D1D1D1;
+        border-radius: 4px;
+        box-shadow: none;
+        box-sizing: border-box;
+        font-size: 15px;
+      }
+
+      .cita {
+        padding: 2rem;
+        background: white;
+        border-bottom: 1px solid #e1e1e1;
+        color: black;
+        margin-bottom: 20px;
+      }
+
+      .cita p {
+        font-weight: bold;
+        margin-bottom: .8rem;
+      }
+
+      .cita p span {
+        font-weight: normal;
+
+      }
+
+      .cita:first-of-type {
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+      }
+
+      .cita:last-of-type {
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+      }
+
+      .button.eliminar,
+      .button.eliminar:hover {
+        background-color: #c10059;
+        color: white;
+        margin-top: 2rem;
+      }
+
+      .alerta-error {
+        background-color: white;
+        color: red;
+        padding: 1rem;
+        font-size: 2rem;
+        text-transform: uppercase;
+        text-align: center;
+        font-family: 'Staatliches', cursive;
+      }
+
